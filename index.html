@@ -1,9 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Spring Security Pattern Tester by ECS Team</title>
-</head>
-<body>
-Stay tuned...
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Spring Security Pattern Tester by ECS Team</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>	
+	<script src="javascripts/globals.js"></script>
+	<script src="javascripts/main.js"></script>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div class="wrapper">
+      <header>
+        <h1>Spring Security Pattern Tester</h1>
+        <p>Provided by <a href="http://www.ecsteam.com">ECS Team</a></p>
+
+        <p class="view"><a href="https://github.com/ECSTeam/spring-security-pattern-tester">View the Project on GitHub</a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ECSTeam/spring-security-pattern-tester/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ECSTeam/spring-security-pattern-tester/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ECSTeam/spring-security-pattern-tester">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="about-project" class="anchor" href="#about-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>About this project</h3>
+
+<p><a href="http://projects.spring.io/spring-security/">Spring Security</a> uses the concepts of <em>Request Matchers</em> to affect changes to an application's security to only certain parts of an application. This project aims to provide a simple mechanism for testing that a pattern matches against a given URI. You can run this Spring Boot application locally or try it below.</p>
+
+<p>To clone the repository for local use:</p>
+
+<pre><code>$ cd your_repo_root
+$ git clone https://github.com/ECSTeam/spring-security-pattern-tester.git
+</code></pre>
+
+<h3>
+<a id="try-it-out" class="anchor" href="#try-it-out" aria-hidden="true"><span class="octicon octicon-link"></span></a>Try it Out!</h3>
+<div id="dead" style="display:none">Sorry, our hosted service is currently down. Please try again later.</div>
+<div id="alive" style="display:none">
+	<form>
+		<div>
+			<label for="pattern">Pattern to Test (e.g. <code>/foo/**/bar</code>):</label><br/>
+			<input id="pattern" type="text" style="width:100%"/>
+		</div>
+		<div style="clear">&nbsp;</div>
+		<div>
+			<label for="type">Request Matcher Type:</label><br/>
+			<select id="type" style="width:100%">
+				<option value="ANT" selected="selected">Apache ANT-style</option>
+				<option value="REGEX">Regular Expression</option>
+			</select>
+		</div>
+		<div style="clear">&nbsp;</div>
+		<div>
+			<label for="testUri">Test URI (do not include protocol, host, or port, e.g. <code>/foo/1234/bar</code>):</label><br/>
+			<input id="testUri" type="text" style="width:100%"/>
+		</div>
+		<div style="clear">&nbsp;</div>
+		<button type="button" id="firetest">Test</button>
+		<div id="results" style="display:none"></div>
+	</form>		
+</div>
+
+
+      </section>
+      <footer>
+		<a href="http://www.ecsteam.com"><img src="images/ecs_logo.png" /></a>
+		<p>This project is maintained by <a href="http://www.ecsteam.com">ECS Team</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>
